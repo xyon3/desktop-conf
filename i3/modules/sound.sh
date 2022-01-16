@@ -4,6 +4,7 @@ VOLUME_MUTE=
 VOLUME_LOW=
 VOLUME_MID=
 VOLUME_HIGH=
+IS_MUTED=$(pacmd list-sinks | awk '/muted/ { print $2 }')
 SOUND_LEVEL=$(pactl list sinks | grep '^[[:space:]]Volume:' |     head -n $(( $SINK + 1 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,')
 
 if [ "$SOUND_LEVEL" -lt 30 ]
@@ -16,4 +17,10 @@ else
 	ICON="$VOLUME_HIGH"
 fi
 
-echo "$ICON $SOUND_LEVEL%"
+if [ "$IS_MUTED" = "yes" ]
+then 
+	echo 
+else
+	echo "$ICON $SOUND_LEVEL%"
+fi
+
