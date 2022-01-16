@@ -1,8 +1,14 @@
 fusuma 			#Touchpad Gestures
 xdotool			#Works with fusuma
 vim 			#Text Editor
+vscodium		#GUI Text Editor
 libreoffice 	#Office Suite
 lxappearance	#Themes Manager
 vlc				#Media Player
 rhythmbox		#Music Player
 virtualbox		#Virtual Machine
+discord			#Comms
+feh 			#Background
+nemo			#File Manager
+rofi			#App Launcher
+
