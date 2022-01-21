@@ -1,0 +1,9 @@
+set icons true
+set drawbox true
+set hidden true
+
+
+# # custom funcs
+# push mw
+# map q push 'w:quit<enter>
+# map Q push :quit<enter>

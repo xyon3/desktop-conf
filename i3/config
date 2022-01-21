@@ -154,8 +154,8 @@ exec_always --no-startup-id nm-applet
 
 # i3GAPS CONF
 for_window [class=".*"] border pixel 3; border color #ffffff
-gaps inner 10
-
+gaps inner 5
+gaps outer 5
 
 ## START FIX_MOUSE ==========
 # Fix mouse going crazy (warping) when changing workspaces (for my config)
