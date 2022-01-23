@@ -11,4 +11,6 @@ discord			#Comms
 feh 			#Background
 nemo			#File Manager
 rofi			#App Launcher
-
+dunst			#Notification Server
+auto-cpufreq	#Battery Power Manager
+brillo			#Screen Brightness Control
