@@ -152,14 +152,27 @@ client.focused_inactive  $bgcolor $bgcolor $bgcolor $bgcolor $bgcolor
 
 
 
-for_window [class="*"] title_window_icon yes
+# for_window [class="*"] title_window_icon yes
+
+for_window [class="^Steam$" title="^Friends$"] floating enable
+for_window [class="^Steam$" title="Steam - News"] floating enable
+for_window [class="^Steam$" title=".* - Chat"] floating enable
+for_window [class="^Steam$" title="^Settings$"] floating enable
+for_window [class="^Steam$" title=".* - event started"] floating enable
+for_window [class="^Steam$" title=".* CD key"] floating enable
+for_window [class="^Steam$" title="^Steam - Self Updater$"] floating enable
+for_window [class="^Steam$" title="^Screenshot Uploader$"] floating enable
+for_window [class="^Steam$" title="^Steam Guard - Computer Authorization Required$"] floating enable
+for_window [title="^Steam Keyboard$"] floating enable
 
 ## END COLORS ========
 
 
 # LAUNCH APPLETS
 exec --no-startup-id pa-applet
-exec_always --no-startup-id nm-applet --sm-disable
+exec --no-startup-id nm-applet --sm-disable
+exec --no-startup-id blueman-applet
+
 
 # LAUNCH DESKTOP SERVER
 exec dunst
@@ -167,9 +180,8 @@ exec dunst
 ## END i3BAR ==========
 
 # i3GAPS CONF
-# for_window [class=".*"] border pixel 1 border color #ffffff
-# gaps inner 5
-# gaps outer 5
+for_window [class=".*"] border pixel 1 border color #ffffff
+gaps inner 5
 # smart_gaps on
 
 ## START FIX_MOUSE ==========
