@@ -22,3 +22,4 @@ export PS1="\[$(tput bold)\]\[\033[38;5;2m\] \u\[$(tput sgr0)\]: \[$(tput sgr
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
+. "$HOME/.cargo/env"
