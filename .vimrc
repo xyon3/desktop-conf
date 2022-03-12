@@ -32,13 +32,13 @@ vnoremap <C-k> :m '<-2<CR>gv=gv
 inoremap <C-j> <ESC>:m .+1<CR>==gi
 inoremap <C-k> <ESC>:m .-2<CR>==gi
 
-nnoremap <C-b> :NERDTree<CR>
-vnoremap <C-b> :NERDTree<CR>
-inoremap <C-b> :NERDTree<CR>
-
-nnoremap <C-x> :NERDTree<CR>:q<CR>
-vnoremap <C-x> :NERDTree<CR>:q<CR>
-inoremap <C-x> :NERDTree<CR>:q<CR>
+" nnoremap <C-b> :NERDTree<CR>
+" vnoremap <C-b> :NERDTree<CR>
+" inoremap <C-b> :NERDTree<CR>
+" 
+" nnoremap <C-x> :NERDTree<CR>:q<CR>
+" vnoremap <C-x> :NERDTree<CR>:q<CR>
+" inoremap <C-x> :NERDTree<CR>:q<CR>
 
 nnoremap <C-e> :Ex<CR>
 
@@ -51,14 +51,14 @@ nnoremap <silent> <leader>+ :vertical resize +5<CR>
 nnoremap <silent> <leader>- :vertical resize -5<CR>
 
 
-call plug#begin()
-
-Plug 'preservim/nerdtree'
-Plug 'ryanoasis/vim-devicons'
-
-Plug 'Valloric/YouCompleteMe'
-
-call plug#end()
+" call plug#begin()
+" 
+" Plug 'preservim/nerdtree'
+" Plug 'ryanoasis/vim-devicons'
+" 
+" Plug 'Valloric/YouCompleteMe'
+" 
+" call plug#end()
 
 
 
