@@ -9,8 +9,8 @@ configuration {
 @theme "/dev/null"
 
 * {
-	bg: #18191f;
-	bg-alt: #54586f;
+	bg: #212121;
+	bg-alt: #171717;
 
 	fg: #ebebeb;
 	fg-alt: #a4a4a4;
@@ -18,8 +18,9 @@ configuration {
 
 	background-color: @bg;	
 	color: @fg;
+	border-color: @fg;
 
-	border: 0;
+	border: 1px;
 	margirn: 0;
 	padding: 0;
 	spacing: 0;
@@ -28,31 +29,38 @@ configuration {
 element {
   padding: 8 0;
   text-color: @fg-alt;
+  border: 0;
+
 }
 
 element selected {
   text-decoration: underline;
   text-color: @fg;
+  border: 0;
 }
 
 element-text {
   background-color: inherit;
   text-color: inherit;
   vertical-align: 0.5;
+  border: 0;
 }
 
 element-icon {
   size: 30;
+  border: 0;
 }
 
 entry {
   background-color: @bg-alt;
   padding: 12;
   text-color: @fg;
+  border: 0;
 }
 
 inputbar {
   children: [prompt, entry];
+  border: 0;
 }
 
 listview {
@@ -60,11 +68,13 @@ listview {
   background-color: @bg;
   columns: 1;
   lines: 8;
+  border: 0;
 }
 
 mainbox {
   background-color: @bg;
   children: [inputbar, listview];
+  border: 0;
 }
 
 prompt {
@@ -72,4 +82,5 @@ prompt {
   enabled: true;
   padding: 12 0 0 12;
   text-color: @fg;
+  border: 0;
 }

@@ -5,7 +5,7 @@ set $mod Mod4
 font pango:monospace 8
 
 # System Font
-font pango: SF Pro Display 9
+	font pango: SF Pro Display, Font Awesome 5 Free 9
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
@@ -118,7 +118,7 @@ exec xrandr --output "eDP1" --auto --output "HDMI2" --right-of "eDP1"
 # Text Workspace Color
 # Urgent Workspace Color
 set $fwcolor "#3c6392" 
-set $bgcolor "#18191f"
+set $bgcolor "#212121"
 set $txcolor "#ebebeb"
 set $urcolor "#521b16"
 
@@ -128,17 +128,17 @@ bar {
 	status_command i3blocks -c /home/$USER/.config/i3/i3blocks.conf
 	workspace_min_width 20
 	height 20
-	output eDP1
+	output primary
 	tray_output primary
 	
 	
     colors {
-        background #18191f
-        statusline #ebebeb
+        background $bgcolor
+        statusline $txcolor
 
 #		COLOR_CLASS			<BORDER>	<BG>		<TEXT>
-        focused_workspace  	$fwcolor	$fwcolor	$txcolor	
-        active_workspace   	$bgcolor	$bgcolor	$txcolor	
+        focused_workspace  	$txcolor	$txcolor	$bgcolor	
+        active_workspace   	$txcolor	$txcolor	$bgcolor	
         inactive_workspace	$bgcolor	$bgcolor	$txcolor	
         urgent_workspace  	$urcolor	$urcolor	$txcolor	
     }
@@ -147,7 +147,7 @@ bar {
 ## START COLORS ========
 # <colorclass>	    	<border><background> <text> <indicator> <child_border>
 
-client.focused			 $fwcolor $bgcolor $txcolor $fwcolor $fwcolor
+client.focused			 $txcolor $txcolor $bgcolor $txcolor $txcolor
 client.focused_inactive  $bgcolor $bgcolor $bgcolor $bgcolor $bgcolor
 
 
@@ -197,7 +197,7 @@ focus_follows_mouse no
 ## START APPLICATIONS =========
 
 # SET BACKGROUND (FEH)
-exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpapers/Anya2.png
+exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/nord_arch.png
 
 # TOUCHPAD (FUSUMA)
 exec_always --no-startup-id /home/$USER/.local/share/gem/ruby/3.0.0/bin/fusuma
