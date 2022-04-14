@@ -17,6 +17,8 @@ alias docserve='python3 -m http.server 8800'
 
 alias code='flatpak run com.visualstudio.code-oss'
 
+alias ":wq"="exit"
+
 
 # Colors
 export PS1="\[$(tput bold)\]\[\033[38;5;2m\] \u\[$(tput sgr0)\]: \[$(tput sgr0)\]\[\033[38;5;4m\]\W\[$(tput sgr0)\] >\[$(tput sgr0)\] "
@@ -27,5 +29,13 @@ export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 
 # ENVIRONTEMTS
-. "$HOME/.cargo/env"
 export MANGOHUD_CONFIGFILE=/home/xyon3/.config/MangoHud/MangoHud.conf
+
+## PATH
+export PATH="$PATH:/home/xyon3/.local/bin"
+
+
+
+## RUST ENVIRONMENTS
+. "$HOME/.cargo/env"
+export RUST_BACKTRACE=1
