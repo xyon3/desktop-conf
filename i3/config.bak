@@ -46,7 +46,7 @@ client.focused_inactive  $bgcolor $bgcolor $bgcolor $bgcolor $bgcolor
 # for_window [class="*"] title_window_icon yes
 for_window [class="Steam$"] floating enable
 for_window [class="file_properties"] floating enable resize set 120 250
-for_window [class="org.gnome.Nautilus"] floating enable resize set 900 600
+for_window [class="Nemo"] floating enable resize set 900 600
 for_window [title="Export"] resize set 800 600
 for_window [title="Open File"] resize set 800 600
 
@@ -90,7 +90,7 @@ bindsym $mod+d exec --no-startup-id rofi -show drun -m -1
 
 
 # OPEN TERMINAL
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec i3-sensible-terminal
 
 
 # PACTL (PIPEWIRE-PULSE)
