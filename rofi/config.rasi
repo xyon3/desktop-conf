@@ -20,7 +20,7 @@ configuration {
 	color: @fg;
 	border-color: @fg;
 
-	border: 0px;
+	border: 1px;
 	margirn: 0;
 	padding: 0;
 	spacing: 0;
