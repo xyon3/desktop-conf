@@ -2,25 +2,25 @@ configuration {
 	display-drun: "Applications: ";
 	display-windows: "Windows: ";
 	drun-display-format: "{icon} {name} ";
-	font: "SF Pro Display 10";
+	font: "Hack NF Regular 10";
 	show-icons: true;	
 }
 
 @theme "/dev/null"
 
 * {
-	bg: #212121;
-	bg-alt: #171717;
+	bg: #44475a;
+	bg-alt: #282a36;
 
-	fg: #ebebeb;
-	fg-alt: #a4a4a4;
+	fg: #f1fa8c;
+	fg-alt: #f8f8f2;
 
 
 	background-color: @bg;	
 	color: @fg;
 	border-color: @fg;
 
-	border: 1px;
+	border: 0px;
 	margirn: 0;
 	padding: 0;
 	spacing: 0;

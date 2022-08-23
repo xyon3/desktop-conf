@@ -1,17 +1,12 @@
 set $mod Mod4
 floating_modifier $mod
 
-
-
-font pango: Hack Nerd Font Bold 8 
-
-exec xrandr --output "eDP1" --auto --output "HDMI2" --right-of "eDP1"
-
+font pango: Hack Nerd Font Bold 8
 
 set $fwcolor "#3c6392" 
 set $bgcolor "#21212100" 
 set $txcolor "#ebebeb" 
-set $urcolor "#521b16" 
+set $urcolor "#ff5555" 
 
 bar {
 	i3bar_command i3bar -t
@@ -22,15 +17,14 @@ bar {
 	output primary
 	tray_output primary
 	
-	
     colors {
         background $bgcolor
         statusline $txcolor
 
 #		COLOR_CLASS			<BORDER>	<BG>		<TEXT>
-        focused_workspace  	$txcolor	$txcolor	$bgcolor	
-        active_workspace   	$txcolor	$txcolor	$bgcolor	
-        inactive_workspace	$bgcolor	$bgcolor	$txcolor	
+        focused_workspace  	#bd93f9  #bd93f9	$bgcolor	
+        active_workspace   	#bd93f9	#bd93f9	$bgcolor	
+        inactive_workspace	$bgcolor	$bgcolor	#bd93f9	
         urgent_workspace  	$urcolor	$urcolor	$txcolor	
     }
 }
@@ -51,7 +45,7 @@ for_window [title="Open File"] resize set 800 600
 
 
 # i3GAPS CONF
-for_window [class=".*"] border pixel 1 border color #AEAE00
+for_window [class=".*"] border pixel 0 border color #AEAE00
 gaps inner 5
     # smart_gaps on
 
@@ -65,7 +59,8 @@ focus_follows_mouse no
 
 
 # SET BACKGROUND (FEH)
-exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/wallpaper.*
+exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/leona.jpg
+
 
 
 # TOUCHPAD (FUSUMA)
