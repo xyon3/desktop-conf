@@ -3,7 +3,7 @@ local opts = { noremap = true, silent = true }
 
 vim.g.mapleader = " "
 
-keymap("n", "<C-e>", ":Ex<CR>", opts)
+-- keymap("n", "<C-e>", ":Ex<CR>", opts)
 
 keymap("n", "<leader>v", "<C-v>", opts)
 
